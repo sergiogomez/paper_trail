@@ -91,7 +91,7 @@ Choose version:
 | paper_trail | branch     | ruby     | activerecord  |
 |-------------|------------|----------|---------------|
 | unreleased  | master     | >= 2.6.0 | >= 5.2, < 7.1 |
-| 13          | 13-stable  | >= 2.6.0 | >= 5.2, < 7.1 |
+| 13          | 13-stable  | >= 2.6.0 | >= 5.2, < 7.2 |
 | 12          | 12-stable  | >= 2.6.0 | >= 5.2, < 7.1 |
 | 11          | 11-stable  | >= 2.4.0 | >= 5.2, < 6.1 |
 | 10          | 10-stable  | >= 2.3.0 | >= 4.2, < 6.1 |
@@ -119,8 +119,8 @@ Experts: to install incompatible versions of activerecord, see
     ```
     bundle exec rails generate paper_trail:install [--with-changes]
     ```
-    
-    If tables in your project use `uuid` instead of `integers` for `id`, then use:  
+
+    If tables in your project use `uuid` instead of `integers` for `id`, then use:
     ```
     bundle exec rails generate paper_trail:install [--uuid]
     ```
